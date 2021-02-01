@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+*{
+	box-sizing: border-box;
+}
+
+
+/* haut */
+.haut, .bas{
+background-color: black;
+color: white;
+}
+
+.haut img{
+width: 100px;
+}
+
+.haut li, .bas li {
+    width: 100px; 
+}
+
+
+/* centre */
+.centre .logo{
+    width: 800px;
+}
+
+
+.centre .gallery img{
+	border: 1px solid #ddd; /* Gray border */
+  	border-radius: 4px;  /* Rounded border */
+ 	width: 200px; /* Set a small width */
+ 	height: 200px;
+ 
+}
+
+
+/* bas  */
+.bas p, .bas img{
+    margin-right: 50px;
+}
+
+.bas img:last-child{
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+/*media queries*/
+
+
+/*LG (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+
+}
+
+/*MD (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+
+}
+
+/*SD (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+
+}
+
+/*XS (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+}
