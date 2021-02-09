@@ -4,48 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/all.min.css">
-	<link rel="stylesheet" href="css/styles.css">
     <title>index</title>
 </head>
 <body>
-    <div class="haut">
-        <div class="container mx-auto flex">
-            <img src="svg/logo-blanc.svg" alt="" class="mr-auto">
-            <ul class="h-30 flex flex-wrap content-center">
-                <li>Accueil</li>
-                <li>À propos</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-            </ul>
+    <div class="h-screen relative">
+
+        <nav class="bg-black shadow-lg">
+            <div class="container mx-auto flex py-2">
+                <img src="svg/logo-blanc.svg" alt="" class="mr-auto w-10 transform hover:scale-110 motion-reduce:transform-none">
+                <ul class="flex flex-wrap content-center text-right text-white space-x-10 ">
+                    <li>Accueil</li>
+                    <li><a href="apropo.html">A propos</a></li>
+                    <li>Portfolio</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container mx-auto flex place-items-center">
+            <div class="mx-auto flex flex-col h-auto">
+                <img src="svg/logo-hakou.svg" alt="" class="mt-20 transform hover:scale-125 motion-reduce:transform-none" >
+                <img src="svg/hakou.svg" alt="" class="my-10 transform hover:scale-150 motion-reduce:transform-none">
+                <p class="mt-8">Hello, moi c'est Vincent, je suis Webdesigner et Developer Web</p>
+            </div>
         </div>
+
+    
+
+        <footer class="bg-black shadow absolute inset-x-0 bottom-0">
+            <div class="container mx-auto flex justify-center">
+
+                <p class="h-30 flex flex-wrap content-center text-white">© 2021 Vincent Chauvaux</p>
+                
+                <div class="space-x-10 ml-auto flex py-2">
+                    
+
+                    <img src="icon/facebook.png" alt="" class="h-8">
+                    <img src="icon/insta.png" alt="" class="h-8">
+                </div>
+                
+            </div>
+        </footer>
+
     </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <div class="centre">
-        <div class="container mx-auto flex flex-col place-items-center my-10">
-            <img src="svg/logo-hakou.svg" alt="" class="logo" >
-            <img src="svg/hakou.svg" alt="" class="logo">
-            <p>Hello, moi c'est Vincent, je suis Webdesigner et Developer Web</p>
-        </div>
-    </div>
-
-    <div class="bas">
-        <div class="container mx-auto flex justify-center">
-            <p class="h-30 flex flex-wrap content-center mr-auto">© 2021 Vincent Chauvaux</p>
-            <ul class="h-30 flex flex-wrap content-center">
-                <li>Accueil</li>
-                <li>À propos</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-            </ul>
-            <img src="icon/facebook.png" alt="">
-            <img src="icon/insta.png" alt="">
-        </div>
-    </div>
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
 </body>
 </html>
