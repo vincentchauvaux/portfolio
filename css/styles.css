@@ -5,13 +5,12 @@
 }
 
 body {
-	height: 100vh;
+
 }
 
-
-
-
-
+.lg-down {
+	width: 100px;
+}
 
 
 /*media queries*/

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <title>index</title>
 </head>
 <body>
@@ -15,33 +16,27 @@
                 <ul class="flex flex-wrap content-center text-right text-white space-x-10 ">
                     <li>Accueil</li>
                     <li><a href="apropo.html">A propos</a></li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
+                    <li> <a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
 
         <div class="container mx-auto flex place-items-center">
             <div class="mx-auto flex flex-col h-auto">
-                <img src="svg/logo-hakou.svg" alt="" class="mt-20 transform hover:scale-125 motion-reduce:transform-none" >
-                <img src="svg/hakou.svg" alt="" class="my-10 transform hover:scale-150 motion-reduce:transform-none">
+                <a href="portfolio.html"><img src="svg/logo-hakou.svg" alt="" class="mt-20 transform hover:scale-125 motion-reduce:transform-none" ></a>
+                <a href="apropo.html" class="my-10 transform hover:scale-150 motion-reduce:transform-none"><img src="svg/hakou.svg" alt="" ></a>
                 <p class="mt-8">Hello, moi c'est Vincent, je suis Webdesigner et Developer Web</p>
             </div>
         </div>
+ 
 
-    
-
-        <footer class="bg-black shadow absolute inset-x-0 bottom-0">
+        <footer class="bg-black shadow fixed inset-x-0 bottom-0">
             <div class="container mx-auto flex justify-center">
 
-                <p class="h-30 flex flex-wrap content-center text-white">© 2021 Vincent Chauvaux</p>
+                <p class="h-8 flex flex-wrap content-center text-white text-sm">© 2021 Vincent Chauvaux</p>
                 
-                <div class="space-x-10 ml-auto flex py-2">
-                    
-
-                    <img src="icon/facebook.png" alt="" class="h-8">
-                    <img src="icon/insta.png" alt="" class="h-8">
-                </div>
+               
                 
             </div>
         </footer>
