@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
 <style type="text/css">
@@ -7,7 +7,7 @@
 	.st1{fill:#414141;}
 	.st2{fill:#AAAAAA;}
 	.st3{fill:#FFFFFF;}
-	.st4{font-family:'SegoeUIBlack';}
+	.st4{font-family:'Montserrat-ExtraBold';}
 	.st5{font-size:31.0273px;}
 </style>
 <g transform="matrix(1, 0, 0, 1, 0, 0)">
@@ -23,7 +23,7 @@
 	<path id="Intersection_3-2" class="st2" d="M207.6,197.1V7.9c104.4,0,188.9,84.7,188.9,189.2c0,28.2-6.2,56.1-18.4,81.5
 		L207.6,197.1z"/>
 </g>
-<text transform="matrix(1 0 0 1 33.0376 173.3027)" class="st3 st4 st5">Designer</text>
-<text transform="matrix(1 0 0 1 257.0166 177.1816)" class="st3 st4 st5">Coder</text>
-<text transform="matrix(1 0 0 1 187.2041 307.1084)" class="st3 st4 st5">Divers</text>
+<text transform="matrix(1 0 0 1 21.7881 202.8479)" class="st3 st4 st5">Designer</text>
+<text transform="matrix(1 0 0 1 251.0127 134.8916)" class="st3 st4 st5">Code</text>
+<text transform="matrix(1 0 0 1 198 318.3018)" class="st3 st4 st5">Divers</text>
 </svg>

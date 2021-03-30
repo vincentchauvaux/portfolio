@@ -2,7 +2,9 @@
 
 *{
 	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
 }
+
 
 .tab {
 	opacity: 0.5;
@@ -17,3 +19,23 @@
 	text-shadow:rgb(105, 105, 105) 0px 0 5px;
 	
 }
+
+img {
+	height: 100%;
+}
+
+  
+.child {
+	scroll-snap-align: start;
+  }
+
+#propo {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+  }
+
+  #propo::-webkit-scrollbar {
+	display: none;
+  }

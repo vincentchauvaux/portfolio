@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/styles.css">
     <title>Hakou</title>
 </head>
 <body>
     <div class="h-screen relative">
 
-        <nav class="bg-black shadow-lg fixed inset-x-0 top-0">
+        <nav class="bg-black shadow-lg fixed inset-x-0 top-0 z-10">
             <div class="container mx-auto flex py-2">
-                <a id="portfolio" href="index.html"></a><img src="svg/logo-blanc.svg" alt="" class="mr-auto w-10 transform hover:scale-110 motion-reduce:transform-none">
+                <div class="mr-auto"><a id="portfolio" href="index.html" class="tab active"><img src="svg/logo-blanc.svg" alt="" class="w-10 transform hover:scale-110 motion-reduce:transform-none"></a></div>
                 
-                <ul class="flex flex-wrap content-center text-right text-white space-x-10 ">
-                    <li><a href="" class="tab active">Acceuil</a></li>
+                <ul class="flex flex-wrap content-center text-right text-white space-x-10 md:flex-row flex-col">
+                    <!-- <li><a href="" class="tab active">Acceuil</a></li> -->
                     <li><a href="" class="tab">A propos</a></li>
                     <li><a href="" class="tab">Portfolio</a></li>
-                    <li><a href="" class="tab">Contact</a></li>
+                    <li><a href="" id="btnFadeIn" class="tab">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -30,35 +32,35 @@
 
         <div class="container mx-auto flex page h-screen">
             <div class="mx-auto my-auto flex flex-col">
-                <a href=""><img src="svg/logo-hakou.svg" alt="" class="mt-20 transform hover:scale-125 motion-reduce:transform-none" ></a>
-                <a href="" class="my-10 transform hover:scale-150 motion-reduce:transform-none"><img src="svg/hakou.svg" alt="" ></a>
-                <p class="mt-8">Hello, moi c'est Vincent, je suis Webdesigner et Developer Web</p>
+                <a href="" class="versapropo"><img src="svg/logo-hakou.svg" alt="" class="mt-20 transform hover:scale-125 motion-reduce:transform-none" ></a>
+                <a href="" class="versportfolio my-10 transform hover:scale-150 motion-reduce:transform-none"><img src="svg/hakou.svg" alt="" ></a>
+                <h1 class="mt-8">Hello, moi c'est Vincent, je suis Webdesigner et Developer Web</h1>
             </div>
         </div>
 
         <!-- A propos -->
 
             
-        <div class="container mx-auto page h-screen hidden">
+        <div id="propo" class="container mx-auto page h-screen hidden mb-0 pb-0">
 
             <!-- page 1 -->
 
-            <div id="aPg1 page" class="flex flex-col h-screen headerOrig">
+            <div id="aPg1 page" class="flex flex-col h-screen headerOrig child">
 
-                    <div class="flex w-1/2 mx-auto my-40">
+                    <div class="flex w-3/5 mx-auto lg:my-40 my-5">
                         <div class="flex flex-col space-y-8"> 
-                            <h1 class="text-7xl">A propos</h1>
+                            <h1 class="text-5xl sm:text-7xl">A propos</h1>
                             <div class="flex">
                                 <div class="flex flex-col space-y-8">
                                     <h5 class="text-3xl">Je suis un Webdesigner habitant à Bruxelles, Belgique.</h5>
                                     <!-- <p>Je cherche un design simple, épuré et à comprendre les relations que les gens ont avec leur entreprise et leurs offrir un produit qui leurs correspond.</p> -->
-                                    <p>j'aime tout se qui touche aux arts graphiques et découvre un vrais challenge que de jouer avec les codes pour concretiser les idées.</p>
+                                    <p>j'aime tout se qui touche aux arts graphiques et découvre un vrais challenge avec le code.</p>
                                     <div class=" flex justify-end space-x-8 mr-12"> 
                                        <a href="https://www.facebook.com/Kat0gat0" target="_blank"><img src="icon/facebook.png" class="w-10 h-10" alt=""></a> 
                                        <a href="https://www.instagram.com/kat0gat0/" target="_blank"><img src="icon/insta.png" class="w-10 h-10" alt=""></a>
                                     </div>
                                 </div>
-                                <div class="flex justify-end"><img src="img/IMG_0222.JPG" class="shadow-2xl rounded-full w-1/3 overflow-hidden object-cover" alt="" >
+                                <div class="justify-end hidden lg:flex"><img src="img/IMG_0222.JPG" class="shadow-2xl rounded-full w-1/3 overflow-hidden object-cover" alt="" >
                                 </div>  
                             </div>
                             
@@ -67,24 +69,36 @@
                     </div>
                     
                     
-                    <div class="w-1/2 mb-32 mx-auto">
-                        <div class="flex shadow-2xl owl-carousel owl-theme mx-auto space-x-2 h-40 overflow-hidden">
-                                <div class="item"><img src="img/hakou-desert.jpg" alt="" class="bg-cover bg-center relative bottom-20"></div>
-                                <div class="item h-40"><img src="img/hakou-montagne.jpg" alt="" class="bg-cover bg-center w-40 h-full relative bottom-0"></div>
-                                <div class="item"><img src="img/hakou-plage.jpg" alt="" class="bg-cover bg-center h-40"></div>
-                                <div class="item"><img src="img/hakou-skate.jpg" alt="" class="bg-cover bg-center h-40 relative "></div>
-                                <div class="item"><img src="img/hakou-noed.jpg" alt="" class="bg-cover bg-center h-40 relative "></div>
+                    <div class="w-3/5 mb-32 mx-auto z-0 hidden lg:flex">
+                        <div class="shadow-2xl owl-carousel owl-theme h-40 overflow-hidden">
+                                <div class="item"><a href="img/hakou-desert.jpg" data-lightbox="perso"><img src="img/hakou-desert.jpg" alt="" class="bg-cover bg-center relative bottom-10"></a></div>
+                                <div class="item h-40"><a href="img/hakou-montagne.jpg" data-lightbox="perso"><img src="img/hakou-montagne.jpg" alt="" class="bg-cover bg-center w-40 h-full relative bottom-0"></a></div>
+                                <div class="item"><a href="img/hakou-plage.jpg" data-lightbox="perso"><img src="img/hakou-plage.jpg" alt="" class="bg-cover bg-center h-40"></a></div>
+                                <div class="item"><a href="img/hakou-skate.jpg" data-lightbox="perso"><img src="img/hakou-skate.jpg" alt="" class="bg-cover bg-center h-40 relative "></a></div>
+                                <div class="item"><a href="img/hakou-noed.jpg" data-lightbox="perso"><img src="img/hakou-noed.jpg" alt="" class="bg-cover bg-center h-40 relative "></a></div>
+                                <div class="item"><a href="img/hakou-burger.jpg" data-lightbox="perso"><img src="img/hakou-burger.jpg" alt="" class="bg-cover bg-center h-40 h-full relative bottom-10"></a></div>
+                                
                         </div>
-                   </div>     
-
-            </div>
-
+                    </div>
+                    
+                    <div class="w-3/5 mb-32 mx-auto z-0 lg:hidden">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"><a href="img/hakou-desert.jpg" data-lightbox="perso"><img src="img/hakou-desert.jpg" alt="" class=""></a></div>
+                            <div class="item"><a href="img/hakou-montagne.jpg" data-lightbox="perso"><img src="img/hakou-montagne.jpg" alt="" class=""></a></div>
+                            <div class="item"><a href="img/hakou-plage.jpg" data-lightbox="perso"><img src="img/hakou-plage.jpg" alt="" class=""></a></div>
+                            <div class="item"><a href="img/hakou-skate.jpg" data-lightbox="perso"><img src="img/hakou-skate.jpg" alt="" class=""></a></div>
+                            <div class="item"><a href="img/hakou-noed.jpg" data-lightbox="perso"><img src="img/hakou-noed.jpg" alt="" class=""></a></div>
+                            <div class="item"><a href="img/hakou-burger.jpg" data-lightbox="perso"><img src="img/hakou-burger.jpg" alt="" class=""></a></div>
+                        </div>
+                   </div>   
+            </div>   
+            
             <!-- page 2 -->
+            <div id="aPg2 page" class="flex flex-col h-screen headerOrig child mt-20">
+           
 
-            <div id="aPg2 page"  class="mx-auto flex-col hidden headerOrig">
-
-                        <div class="flex w-1/2 flex-col-3 mx-auto justify-between">
-                            <div class="flex flex-col mt-14">
+                        <div class="flex w-3/5 lg:flex-row flex-col mx-auto justify-between mt-20">
+                            <div class="flex flex-col mt-14 flex">
                                 <h5 class="text-3xl mb-5">Partie designer</h5>
                                     <p> UX design</br>
                                         UI design</br>
@@ -95,11 +109,11 @@
                                     </p>
                             </div>
 
-                            <img src="svg/print/container-cent.svg" alt="" class="w-1/3">
+                            <img src="svg/print/container-cent.svg" alt="" class="w-1/2 lg:mt-0 mt-10 mb-0 md:mb-20 mr-10">
 
-                            <div class="flex flex-col mt-14 justify-items-end" >
-                                <h5 class="text-3xl mb-5">Partie coder</h5>
-                                    <p> Front-end</br>
+                            <div class="flex flex-col mt-14 justify-items-end flex">
+                                <h5 class="text-3xl mb-5">Partie code</h5>
+                                    <p class="flex justify-end"> Front-end</br>
                                         Back-end</br>
                                         HTML / CSS</br>
                                         JavaScript</br>
@@ -108,11 +122,13 @@
                             </div>
                         </div>
 
-                        <div class="flex flex-col-2 w-3/5 mx-auto justify-around my-20">
-                            <img src="" alt="" class="flex content-start">
-                            <div class="flex flex-col">
-                                <h5 class="text-3xl mb-5">Divers</h5>
-                                <p> 
+                        <div class="flex flex-col w-3/5 mx-auto justify-around my-20">
+
+                            <!-- <div class="item"><a href="img/nintendo-4659315.png" data-lightbox="png"><img src="img/nintendo-4659315.png" alt="" class=" w-1/4"></a></div> -->
+                            
+                            <div class="flex flex-col justify-end">
+                                <h5 class="text-3xl mb-5 flex justify-end">Divers</h5>
+                                <p class="flex justify-end"> 
                                     J'aime jouer aux jeux vidéos</br>
                                     J'aime l'humour</br>
                                     J'aime manger</br>
@@ -122,6 +138,18 @@
                                 </p>
                             </div>
                         </div>     
+
+                        
+            </div>
+            <!-- page 3 -->
+            <div id="aPg3 page" class="flex flex-col h-screen headerOrig child mt-20 pb-0 sm:flex hidden">
+           
+
+                
+                    <div class="h-screen item my-auto mx-auto mb-0 inset-y-0 bottom-0"><a href="svg/print/container-low.svg" data-lightbox="stat"><img src="svg/print/container-low.svg" alt="" class=""></a></div>
+                    
+
+                
             </div>
 
         </div>
@@ -131,42 +159,44 @@
         <div id="portfolio" class="container mx-auto page h-screen hidden">
 
             <div class="flex flex-col h-screen">
-                <div class="flex w-1/2 mx-auto my-40">
+                <div class="flex w-3/5 mx-auto my-40">
                     
                         <div class="space-y-10 w-full">   
                             <div class="space-y-10 w-100">
 
                                 
-                                    <a href="" id="portfolio"><h1 class="text-7xl mb-10" >Portfolio</h1></a>
+                                    <a href="" id="portfolio"><h1 class="text-5xl sm:text-7xl mb-10">Portfolio</h1></a>
                                     <!-- tabc -->
 
-                                    <!-- j'ai hidden la 145 : demo hidden -->
+                                    
 
                                 <div class="demo"  id="demo1"> 
-                                    <div class="grid grid-cols-3 space-x-10 flex items-end" >
-                                        <a href=""><div class="tabc flex flex-col shadow-lg h-100 space-y-2 border-2 p-2 rounded-2xl">
-                                            <img src="/img/logo ver2tek.png" alt="" class="flex justify-center object-scale-down h-60 py-6">
+                                    <div class="grid md:grid-cols-3 xs:grid-rows-3 flex">
+
+                                        <a href=""><div class="tabc flex flex-col shadow-lg md:h-full h-100 space-y-2 border-2 p-2 m-1 rounded-2xl">
+                                            <img src="/img/logo ver2tek.png" alt="" class="flex object-scale-down h-60 py-6">
                                             <h5>Illustrator</h5>
-                                            <p>Differents projets de logos et illustrations</p>
+                                            <p>projets de logos et illustrations</p>
                                         </div></a>
                                      
-                                        <a href=""><div class="tabc flex flex-col shadow-lg h-100 space-y-2 border-2 p-2 rounded-2xl">
-                                            <img src="/img/yogo.jpg" alt="" class="flex object-scale-down h-60 py-6 ">
+                                        <a href=""><div class="tabc flex flex-col shadow-lg md:h-full h-100 space-y-2 border-2 p-2 m-1 rounded-2xl">
+                                            <img src="/img/yogo.jpg" alt="" class="flex object-scale-down h-60 py-6">
                                             <h5>Code</h5>
-                                            <p>Projets wordpress et full HTML /CSS</p>                                    
+                                            <p>Projets wordpress</p>                                    
                                         </div></a>
                                     
-                                        <a href=""><div class="tabc flex flex-col shadow-lg h-100 space-y-2 border-2 p-2 rounded-2xl">
-                                            <img src="/img/robot 2.jpg" alt="" class="object-scale-down h-60 p-6">
+                                        <a href=""><div class="tabc flex flex-col shadow-lg md:h-full h-100 space-y-2 border-2 p-2 m-1 rounded-2xl">
+                                            <img src="/img/robot 2.jpg" alt="" class="flex object-scale-down h-60 py-6">
                                             <h5>Photoshop</h5>
                                             <p>Projets pour l'école et les amis</p>
                                         </div></a>
+
                                     </div>
 
                                
 
-                                    <div class="flex my-5 justify-center items-center " name="fade">
-                                        <img src="/img/vous etes des animeaux.jpg" alt="" class=" rounded-2xl" v-if="show">
+                                    <div class="flex mt-5 justify-center items-center p-2" name="fade">
+                                        <img src="/img/vous etes des animeaux.jpg" alt="" class="flex rounded-t-2xl">
                                     </div>
 
                                 </div> 
@@ -176,27 +206,31 @@
                                 <div class="space-y-10 w-100 demo hidden" id="demo2">
 
                                    <!-- tabp-->
-                                    <div class="grid grid-cols-3 space-x-10" > 
-                                        <div class="flex flex-col shadow-lg h-100 space-y-2 border-2 p-2 rounded-2xl">
+
+                                    <div class="grid md:grid-cols-3 xs:grid-row"> 
+
+                                        <div class="flex flex-col shadow-lg m-1 border-2 p-2 rounded-2xl">
                                        
                                             <a href=""><h5 class="tabp">Illustrator</h5></a>
                                             
                                         </div> 
-                                        <div class="flex flex-col shadow-lg h-100 space-y-2 border-2 p-2 rounded-2xl">
+                                        <div class="flex flex-col shadow-lg m-1 border-2 p-2 rounded-2xl">
                                            
                                             <a href=""><h5 class="tabp">code</h5></a>
                                             
                                         </div>
-                                        <div class="flex flex-col shadow-lg h-100 space-y-2 border-2 p-2 rounded-2xl">
+                                        <div class="flex flex-col shadow-lg m-1 border-2 p-2 rounded-2xl">
                                            
-                                            <a href=""><h5 class="tabp">photo</h5></a>
+                                            <a href=""><h5 class="tabp">photoshop</h5></a>
                                             
                                         </div> 
 
                                     </div>
 
                                     <!-- contenu -->
-                                                    <!-- illustrator-->
+
+                                                        <!-- illustrator-->
+
                                     <div class="contenu flex flex-col space-y-8"  > 
                                         <div class="flex">
                                             <div class="flex flex-col space-y-8" >
@@ -209,17 +243,20 @@
 
                                         </div>
                                         
-                                        <div class="flex mx-auto space-x-2 h-52 overflow-hidden">
-                                            <div class="item my-auto"><img src="img/logo ver2tek.png" alt="" class=""></div>
-                                            <div class="item my-auto"><img src="img/logo-hakou.png" alt="" class=""></div>
-                                            <div class="item my-auto"><img src="img/pigeon.png" alt="" class=""></div>
-                                            <div class="item my-auto"><img src="img/obama vincent.png" alt="" class=""></div>
-                                    
+                                        <div class="flex owl-carousel owl-theme mx-auto overflow-hidden">
+                                            <div class="item my-auto"><a href="img/logo ver2tek.png" data-lightbox="illu"><img src="img/logo ver2tek.png" alt="" class=""></a></div>
+                                            <div class="item my-auto"><a href="img/logo-hakou.png" data-lightbox="illu"><img src="img/logo-hakou.png" alt="" class=""></a></div>
+                                            <div class="item my-auto"><a href="img/pigeon.png" data-lightbox="illu"><img src="img/pigeon.png" alt="" class=""></a></div>
+                                            <div class="item my-auto"><a href="img/obama vincent.png" data-lightbox="illu"><img src="img/obama vincent.png" alt="" class=""></a></div>
+                                            <div class="item my-auto"><a href="img/gnoulux.png" data-lightbox="illu"><img src="img/gnoulux.png" alt="" class=""></a></div>
+                                            <div class="item my-auto"><a href="img/application.png" data-lightbox="illu"><img src="img/application.png" alt="" class=""></a></div>
+                                            <div class="item my-auto"><a href="img/radio.png" data-lightbox="illu"><img src="img/radio.png" alt="" class=""></a></div>
+                                            <div class="item my-auto"><a href="img/medieval.png" data-lightbox="illu"><img src="img/medieval.png" alt="" class=""></a></div>
+                                            <div class="item my-auto"><a href="img/back/manga-back.png" data-lightbox="illu"><img src="img/manga.png" alt="" class=""></a></div>
                                         </div>
                                         
                                     </div>
-                                                        <!-- code-->
-                                    
+                                                        <!-- code-->                                  
 
                                     <div class="contenu flex flex-col space-y-8 hidden"> 
                                         <div class="flex">
@@ -230,46 +267,41 @@
                                             </div>
                                         </div>
 
-                                        <div class="flex mx-auto space-x-2 h-96 overflow-hidden">
-                                            <div class="item overflow-y-auto"><img src="img/Manga streaming.jpg" alt="" class=""></div>
-                                            <div class="item overflow-y-auto"><img src="img/yogo.jpg" alt="" class=""></div>
-                                            <div class="item overflow-y-auto"><img src="img/power.png" alt="" class=""></div>
+                                        <div class="flex mx-auto h-96 overflow-hidden justify-center space-x-1">
+                                            <div class="item"><a href="img/Manga streaming.jpg" data-lightbox="code" class="flex justify-end"><img src="img/Manga streaming.jpg" alt="" class=""></a></div>
+                                            <div class="item"><a href="img/yogo.jpg" data-lightbox="code" class="flex justify-end"><img src="img/yogo.jpg" alt="" class=""></a></div>
+                                            <div class="item"><a href="img/power.png" data-lightbox="code" class="flex justify-end"><img src="img/power.png" alt="" class=""></a></div>
                                                                             
                                         </div>
 
                                     </div>
-                                                            <!-- photo-->
+                                                        <!-- photo-->
+
                                     <div class="contenu flex flex-col space-y-8 hidden" > 
                                         <div class="flex">
                                             <div class="flex flex-col space-y-8" >
                                                 <h5 class="text-3xl">projets réalisé à la formation</h5>
-                                                <p>Et quelques démo</p>
+                                                <p>Et quelques projets personnel</p>
                                                 
                                             </div>
                                         </div>
 
+                                        
+                                        <div class="owl-carousel owl-theme mb-20 overflow-hidden">
 
-                                        <!-- <div class="w-1/2 mb-32 mx-auto">
-                                            <div class="flex shadow-2xl owl-carousel owl-theme mx-auto space-x-2 h-40 overflow-hidden">
-                                                    <div class="item"><img src="img/hakou-desert.jpg" alt="" class="bg-cover bg-center relative bottom-20"></div>
-                                                    <div class="item h-40"><img src="img/hakou-montagne.jpg" alt="" class="bg-cover bg-center w-40 h-full relative bottom-0"></div>
-                                                    <div class="item"><img src="img/hakou-plage.jpg" alt="" class="bg-cover bg-center h-40"></div>
-                                                    <div class="item"><img src="img/hakou-skate.jpg" alt="" class="bg-cover bg-center h-40 relative "></div>
-                                                    <div class="item"><img src="img/hakou-noed.jpg" alt="" class="bg-cover bg-center h-40 relative "></div>
-                                            </div>
-                                       </div>      -->
-
-                                        <div class="flex mx-auto space-x-2 owl-carousel owl-theme mb-20 h-auto overflow-hidden">
-                                            <div class="item"><img src="img/affiche domination dream.jpg" alt="" class="" data-lightbox="owl"></div>
-                                            <div class="item "><img src="img/charlien.png" alt="" class="" data-lightbox="owl"></div>
-                                            <div class="item"><img src="img/combocat.jpg" alt="" class="" data-lightbox="owl"></div>
-                                            <div class="item"><img src="img/jeune - vieux.jpg" alt="" class="" data-lightbox="owl"></div>
-                                            <div class="item"><img src="img/jordan .png" alt="" class="" data-lightbox="owl"></div>
-                                            <div class="item"><img src="img/abstrait 1.jpg" alt="" class="" data-lightbox="owl"></div>
-                                            <div class="item"><img src="img/combocat.jpg" alt="" class="" data-lightbox="owl"></div>
-                                            <div class="item"><img src="img/robot 1.jpg" alt="" class="" data-lightbox="owl"></div>
-                                            <div class="item"><img src="img/robot 2.jpg" alt="" class="" data-lightbox="owl"></div>
-                                            <div class="item"><img src="img/balio.jpg" alt="" class="" data-lightbox="owl" ></div>
+                                            <div class="item"><a href="img/affiche domination dream.jpg" data-lightbox="photo"><img src="img/affiche domination dream.jpg" alt="" class=""></a></div>
+                                            <div class="item "><a href="img/charlien.png" data-lightbox="photo"><img src="img/charlien.png" alt="" class=""></a></div>
+                                            <div class="item"><a href="img/jeune - vieux.jpg" data-lightbox="photo"><img src="img/jeune - vieux.jpg" alt="" class=""></a></div>
+                                            <div class="item"><a href="img/jordan .png" data-lightbox="photo"><img src="img/jordan .png" alt="" class=""></a></div>
+                                            <div class="item"><a href="img/abstrait 1.jpg" data-lightbox="photo"><img src="img/abstrait 1.jpg" alt="" class=""></a></div>
+                                            <div class="item"><a href="img/combocat.jpg" data-lightbox="photo"><img src="img/combocat.jpg" alt="" class="bg-cover bg-center h-full relative bottom-0"></a></div>
+                                            <div class="item"><a href="img/robot 1.jpg" data-lightbox="photo"><img src="img/robot 1.jpg" alt="" class=""></a></div>
+                                            <div class="item"><a href="img/robot 2.jpg" data-lightbox="photo"><img src="img/robot 2.jpg" alt="" class=""></a></div>
+                                            <div class="item"><a href="img/balio.jpg" data-lightbox="photo"><img src="img/balio.jpg" alt="" class=""></a></div>
+                                            <div class="item"><a href="img/vintage02.png" data-lightbox="photo"><img src="img/vintage02.png" alt="" class=""></a></div>
+                                            <div class="item"><a href="img/Vincent Chauvaux Fruit 03.png" data-lightbox="photo"><img src="img/Vincent Chauvaux Fruit 03.png" alt="" class=""></a></div>
+                                            <div class="item"><a href="img/recette 07.png" data-lightbox="photo"><img src="img/recette 07.png" alt="" class=""></a></div>
+                                            <div class="item"><a href="img/Vincent Chauvaux Animaux 01.png" data-lightbox="photo"><img src="img/Vincent Chauvaux Animaux 01.png" alt="" class=""></a></div>
                                                                             
                                         </div>
 
@@ -291,36 +323,36 @@
 
         <div class="container mx-auto flex place-items-center page hidden">
 
-            <div class="flex justify-center grid-cols-2 mx-auto pt-20">
+            <div class="flex justify-center grid-col mx-auto pt-20">
                 <div class="flex content-center mt-20">
                     <div class="flex grid shadow-lg h-100 border-2 p-2 rounded-2xl">
                         <div class="flex flex-col bg-white px-8 mb-20">
-                                <h1 class="text-7xl">Vincent Chauvaux</h1>
+                                <h1 class="text-5xl sm:text-7xl">Vincent Chauvaux</h1>
                                 <!-- <h5 class="text-3xl flex justify-end">Bruxelles, Belgique</h5>    -->
                         </div>
-                        <div class="bg-white rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
-                                <div class="md:flex mb-3">
-                                    <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                        <form method="post" class="bg-white rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2 mx-auto">
+                                <div class="sm:flex mb-3">
+                                    <div class="sm:w-1/2  px-3 mb-6 md:mb-0 form-group">
                                         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
                                         Prénom
                                         </label>
                                         <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3" id="grid-first-name" type="text" placeholder="Jane">
                                     </div>
-                                    <div class="md:w-1/2 px-3">
+                                    <div class="sm:w-1/2 px-3 form-group">
                                         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-last-name">
                                         Nom
                                         </label>
                                         <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-last-name" type="text" placeholder="Doe">
                                     </div>
                                 </div>
-                                <div class="md:flex mb-3">
-                                    <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                <div class="sm:flex mb-3">
+                                    <div class="sm:w-1/2 px-3 mb-6 md:mb-0 form-group">
                                         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-city">
                                         Mail
                                         </label>
                                         <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-city" type="text" placeholder="mail@live.be">
                                     </div>
-                                    <div class="md:w-1/2 px-3">
+                                    <div class="sm:w-1/2 px-3 form-group">
                                         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-state">
                                         Zone
                                         </label>
@@ -337,21 +369,21 @@
                                     </div>
                                 </div>
                                 <div class="mt-3 md:flex mb-6">
-                                    <div class="px-3 mb-6 md:mb-0">
+                                    <div class="px-3 mb-6 md:mb-0 form-group">
                                         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
                                             message
                                         </label>
                                         <textarea placeholder="message" class=" border border-grey-lighter text-grey-darker flex-1 p-2 m-1 bg-transparent rounded" cols="60" rows="4" name="tt"></textarea>
                                     </div>
                                 </div>
-                                <div class="flex items-center justify-end mt-3 md:flex mb-6 px-3 m-1">
-                                    <button class="bg-black hover:bg-black text-white font-bold py-2 px-4 rounded-full p-2 m-1" type="button">
+                                <div class="flex items-center justify-start md:justify-end mt-3 md:flex mb-6 px-3 m-1">
+                                    <button class="bg-black hover:bg-black text-white font-bold py-2 px-4 rounded-full p-2 m-1 transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out"  type="submit">
                                     Envoie
                                     </button>
                                 </div>
-                        </div>
+                            </form>
                     </div>
-                    <div class="flex w-80 pl-20"><img src="img/IMG_0222.JPG" class="flex shadow-2xl rounded-full object-cover" alt="">
+                    <div class="w-80 pl-20  hidden lg:flex"><img src="img/IMG_0222.JPG" id="photo" class="flex shadow-2xl rounded-full object-cover" alt="">
                     </div>
                 </div>
             </div>
@@ -360,7 +392,7 @@
 
 
 
-        <footer class="bg-black shadow fixed inset-x-0 bottom-0">
+        <footer class="bg-black shadow fixed inset-x-0 bottom-0 z-10">
             <div class="container mx-auto flex justify-center">
                 <p class="h-8 flex flex-wrap content-center text-white text-sm">© 2021 Vincent Chauvaux</p>
             </div>
@@ -370,8 +402,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
-<script src="js/owl.carousel.min.js"></script>
 <script src="js/lightbox.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/vue.js"></script>
 
